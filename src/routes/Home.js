@@ -15,10 +15,6 @@ const Home = () => {
     getMovies();
   }, []);
 
-  const onClick = () => {
-
-  }
-
   return (
     <div>
       {loading ?  (

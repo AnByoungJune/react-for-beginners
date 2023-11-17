@@ -11,10 +11,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/hello" element={<h1>Hello!!</h1>}>
+        <Route path={`${process.env.PUBLIC_URL}/hello`} element={<h1>Hello!!</h1>}>
         </Route>
-        <Route path="/" element={<Home />} />
-        <Route path="/movie/:id" element={<Detail />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
+        <Route path={`${process.env.PUBLIC_URL}/movie/:id`} element={<Detail />} />
       </Routes>
     </Router>
   );
